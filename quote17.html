@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiyosaki Quote - Quotiva</title>
+    <link rel="icon" href="Quotiva.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4e7d1;
+            color: #4a3f35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInZoom 1.5s ease-out forwards;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #fff8e7;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #c0a080;
+            margin: 30px auto;
+        }
+        .quote-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3e2e20;
+        }
+        .author {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .author-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #b3a484;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: #efe2c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c0a080;
+        }
+        .quote-explanation p {
+            line-height: 1.6;
+        }
+        .book-section {
+            text-align: center;
+        }
+        .book-img {
+            width: 260px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8c705f;
+        }
+        .book-caption {
+            font-style: italic;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #8c705f;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+        .back-button:hover {
+            background: #6a4f3a;
+            transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            padding-left: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .quote-section h1 {
+                font-size: 1.5rem;
+            }
+            .about-author {
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-img {
+                width: 100px;
+                height: 100px;
+            }
+            .back-button {
+                display: block;
+                margin: 20px 0;
+            }
+            .book-img {
+                width: 160px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4e7d1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #c2a382, #8c7460);
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #8c7460, #4a3f35);
+            box-shadow: 0 0 6px rgba(138, 107, 85, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quote-section">
+            <h1>"Don’t let the fear of losing be greater than the excitement of winning."</h1>
+            <p class="author">- Robert Kiyosaki -</p>
+        </section>
+        
+        <section class="section about-author">
+            <img src="quote17.jpg" alt="Robert Kiyosaki portrait" class="author-img">
+            <div>
+                <h2>About the Author</h2>
+                <p>Robert Kiyosaki (born 1947) is an American entrepreneur, investor, and author, best known for his book Rich Dad Poor Dad, which promotes financial education and wealth-building strategies. His work focuses on teaching people how to achieve financial independence through smart investing, entrepreneurship, and financial literacy.</p>
+            </div>
+        </section>
+
+        <section class="section quote-explanation">
+            <h2>Understanding the Quote</h2>
+            <p><strong>Why did he write this?</strong><br>Kiyosaki emphasizes the importance of having a success-driven mindset. Many people hesitate to take risks because they fear failure, but this quote encourages them to focus more on the rewards of success than the possibility of setbacks.</p>
+            <p><strong>When?</strong><br>This quote aligns with Kiyosaki’s philosophy on financial education and personal growth, often mentioned in his books and interviews. He has consistently advocated for a mindset shift that prioritizes learning from failures rather than fearing them.</p>
+            <p><strong>What does it mean?</strong><br>This quote suggests that fear should not be the driving force behind decision-making. If the fear of failure is greater than the excitement of potential success, it can lead to missed opportunities. Kiyosaki urges people to embrace risk, learn from their losses, and stay motivated by the prospect of achieving their goals.</p>
+        </section>
+        
+        <section class="section">
+            <h2>How This Quote Can Inspire You</h2>
+            <p>This quote serves as a reminder to focus on possibilities rather than limitations. Whether in business, academics, or personal goals, fear can hold you back from taking important steps. By shifting your mindset to see failure as a learning experience rather than a defeat, you allow yourself to grow, improve, and eventually succeed. Let excitement drive you forward, not fear hold you back.</p>
+        </section>
+        
+        <section class="section book-section">
+            <img src="Book - Recto.png" alt="Quotiva Book" class="book-img">
+            <p class="book-caption">Explore more timeless quotes in my book.</p>
+        </section>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="#" class="back-button">Download Book</a>
+    </div>
+</body>
+</html>

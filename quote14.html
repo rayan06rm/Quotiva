@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Quote - Quotiva</title>
+    <link rel="icon" href="Quotiva.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4e7d1;
+            color: #4a3f35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInZoom 1.5s ease-out forwards;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #fff8e7;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #c0a080;
+            margin: 30px auto;
+        }
+        .quote-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3e2e20;
+        }
+        .author {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .author-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #b3a484;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: #efe2c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c0a080;
+        }
+        .quote-explanation p {
+            line-height: 1.6;
+        }
+        .book-section {
+            text-align: center;
+        }
+        .book-img {
+            width: 260px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8c705f;
+        }
+        .book-caption {
+            font-style: italic;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #8c705f;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+        .back-button:hover {
+            background: #6a4f3a;
+            transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            padding-left: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .quote-section h1 {
+                font-size: 1.5rem;
+            }
+            .about-author {
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-img {
+                width: 100px;
+                height: 100px;
+            }
+            .back-button {
+                display: block;
+                margin: 20px 0;
+            }
+            .book-img {
+                width: 160px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4e7d1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #c2a382, #8c7460);
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #8c7460, #4a3f35);
+            box-shadow: 0 0 6px rgba(138, 107, 85, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quote-section">
+            <h1>"To live is the rarest thing in the world. Most people exist, that is all."</h1>
+            <p class="author">- Oscar Wilde -</p>
+        </section>
+        
+        <section class="section about-author">
+            <img src="quote14.jpg" alt="Oscar Wilde portrait" class="author-img">
+            <div>
+                <h2>About the Author</h2>
+                <p>Oscar Wilde (1854–1900) was an Irish poet, playwright, and novelist known for his sharp wit and deep insights into human nature. He was one of the most famous writers of the Victorian era, celebrated for works such as The Picture of Dorian Gray and The Importance of Being Earnest. Wilde’s writings often challenged societal norms, promoting individuality, beauty, and the pursuit of a meaningful life. His life was marked by both great literary success and personal struggles, but his legacy as a brilliant thinker and storyteller remains influential to this day.</p>
+            </div>
+        </section>
+
+        <section class="section quote-explanation">
+            <h2>Understanding the Quote</h2>
+            <p><strong>Why did he write this?</strong><br>Oscar Wilde was known for his sharp wit and deep reflections on life. Through this quote, he criticizes how many people go through life without truly experiencing it. He believed that genuine living involves passion, curiosity, and embracing every moment, rather than merely going through routine motions.</p>
+            <p><strong>When?</strong><br>Wilde lived during the late 19th century, a time of strict societal expectations and conformity. His works often challenged these norms, encouraging people to seek individuality and fulfillment rather than simply following what was expected of them.</p>
+            <p><strong>What does it mean?</strong><br>The quote highlights the difference between merely existing and truly living. Many people spend their lives stuck in routines, never fully engaging with their passions, dreams, or the beauty of the world around them. Wilde urges us to break free from passive existence and actively create a meaningful, vibrant life.</p>
+        </section>
+        
+        <section class="section">
+            <h2>How This Quote Can Inspire You</h2>
+            <p>This quote reminds you to seek purpose and excitement in your life. Don’t let routine or fear keep you from exploring new opportunities, expressing yourself, or following your dreams. True living means embracing experiences, taking risks, and making the most of the time you have.</p>
+        </section>
+        
+        <section class="section book-section">
+            <img src="Book - Recto.png" alt="Quotiva Book" class="book-img">
+            <p class="book-caption">Explore more timeless quotes in my book.</p>
+        </section>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="#" class="back-button">Download Book</a>
+    </div>
+</body>
+</html>

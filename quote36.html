@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelius Quote - Quotiva</title>
+    <link rel="icon" href="Quotiva.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4e7d1;
+            color: #4a3f35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInZoom 1.5s ease-out forwards;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #fff8e7;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #c0a080;
+            margin: 30px auto;
+        }
+        .quote-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3e2e20;
+        }
+        .author {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .author-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #b3a484;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: #efe2c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c0a080;
+        }
+        .quote-explanation p {
+            line-height: 1.6;
+        }
+        .book-section {
+            text-align: center;
+        }
+        .book-img {
+            width: 260px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8c705f;
+        }
+        .book-caption {
+            font-style: italic;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #8c705f;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+        .back-button:hover {
+            background: #6a4f3a;
+            transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            padding-left: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .quote-section h1 {
+                font-size: 1.5rem;
+            }
+            .about-author {
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-img {
+                width: 100px;
+                height: 100px;
+            }
+            .back-button {
+                display: block;
+                margin: 20px 0;
+            }
+            .book-img {
+                width: 160px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4e7d1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #c2a382, #8c7460);
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #8c7460, #4a3f35);
+            box-shadow: 0 0 6px rgba(138, 107, 85, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quote-section">
+            <h1>"Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth."</h1>
+            <p class="author">- Marcus Aurelius -</p>
+        </section>
+        
+        <section class="section about-author">
+            <img src="quote18.jpg" alt="Marcus Aurelius portrait" class="author-img">
+            <div>
+                <h2>About the Author</h2>
+                <p>Marcus Aurelius (121-180 AD) was a Roman emperor and philosopher, best known for his work Meditations, a collection of personal reflections on Stoic philosophy. His writings emphasize self-discipline, resilience, and the importance of living a virtuous life. As one of the last great Stoic philosophers, his wisdom continues to inspire people today.</p>
+            </div>
+        </section>
+
+        <section class="section quote-explanation">
+            <h2>Understanding the Quote</h2>
+            <p><strong>Why did he write this?</strong><br>Marcus Aurelius wrote this as part of his Stoic philosophy, emphasizing that our understanding of the world is shaped by our perceptions rather than absolute truth. He believed that by mastering our thoughts and emotions, we could navigate life with greater wisdom and clarity.</p>
+            <p><strong>When?</strong><br>This quote originates from <i>Meditations</i>, written between 170 and 180 AD. During this time, Marcus Aurelius faced wars, plagues, and political turmoil, yet he remained dedicated to his philosophical reflections, using them as a guide for personal growth and leadership.</p>
+            <p><strong>What does it mean?</strong><br>The quote highlights the subjectivity of human perception. It suggests that what we accept as reality is often influenced by our own biases, emotions, and limited understanding. Instead of blindly accepting everything we see and hear as absolute truth, we must critically analyze and question our perceptions. This philosophy encourages self-awareness and intellectual humility, reminding us that there is always more to learn beyond our immediate viewpoints.</p>
+        </section>
+        
+        <section class="section">
+            <h2>How This Quote Can Inspire You</h2>
+            <p>This idea teaches us not to be swayed by opinions or appearances alone but to seek deeper understanding. By recognizing that our perspectives are shaped by experience and belief, we can become more open-minded, less reactive, and more thoughtful in our judgments. In daily life, this mindset can help us approach challenges with wisdom, avoid unnecessary conflicts, and continuously strive for personal growth.</p>
+        </section>
+        
+        <section class="section book-section">
+            <img src="Book - Recto.png" alt="Quotiva Book" class="book-img">
+            <p class="book-caption">Explore more timeless quotes in my book.</p>
+        </section>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="#" class="back-button">Download Book</a>
+    </div>
+</body>
+</html>

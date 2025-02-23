@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Twain Quote - Quotiva</title>
+    <link rel="icon" href="Quotiva.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4e7d1;
+            color: #4a3f35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInZoom 1.5s ease-out forwards;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #fff8e7;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #c0a080;
+            margin: 30px auto;
+        }
+        .quote-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3e2e20;
+        }
+        .author {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .author-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #b3a484;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: #efe2c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c0a080;
+        }
+        .quote-explanation p {
+            line-height: 1.6;
+        }
+        .book-section {
+            text-align: center;
+        }
+        .book-img {
+            width: 260px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8c705f;
+        }
+        .book-caption {
+            font-style: italic;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #8c705f;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+        .back-button:hover {
+            background: #6a4f3a;
+            transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            padding-left: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .quote-section h1 {
+                font-size: 1.5rem;
+            }
+            .about-author {
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-img {
+                width: 100px;
+                height: 100px;
+            }
+            .back-button {
+                display: block;
+                margin: 20px 0;
+            }
+            .book-img {
+                width: 160px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4e7d1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #c2a382, #8c7460);
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #8c7460, #4a3f35);
+            box-shadow: 0 0 6px rgba(138, 107, 85, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quote-section">
+            <h1>"The two most important days in your life are the day you are born and the day you find out why."</h1>
+            <p class="author">- Mark Twain -</p>
+        </section>
+        
+        <section class="section about-author">
+            <img src="quote15.jpg" alt="Mark Twain portrait" class="author-img">
+            <div>
+                <h2>About the Author</h2>
+                <p>Mark Twain (1835–1910) was an American writer, humorist, and lecturer, widely regarded as one of the greatest authors in American literature. Born Samuel Langhorne Clemens, he is best known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn, which provide insightful critiques of society with wit and satire. Twain’s works often explored themes of morality, human nature, and the search for purpose. His sharp observations and timeless wisdom continue to inspire readers around the world.</p>
+            </div>
+        </section>
+
+        <section class="section quote-explanation">
+            <h2>Understanding the Quote</h2>
+            <p><strong>Why did he write this?</strong><br>Mark Twain was known for his deep reflections on life, purpose, and human existence. This quote emphasizes the importance of self-discovery and finding meaning in one’s life. Twain wanted people to realize that life is more than just living—it is about understanding one's purpose and making a meaningful impact.</p>
+            <p><strong>When?</strong><br>Though the exact date of this quote’s origin is uncertain, Twain’s works and speeches frequently touched on the themes of purpose and self-awareness throughout the late 19th and early 20th centuries. His insights remain timeless and continue to inspire those searching for direction in life.</p>
+            <p><strong>What does it mean?</strong><br>The quote highlights two defining moments in a person's life: <ul><li>The first, being born, is an event that happens to everyone.</li><li>The second, discovering one’s purpose, is what truly gives life meaning.</li></ul>Many people go through life without fully understanding their purpose, merely existing rather than truly living. Twain’s words encourage individuals to seek out their passion, follow their calling, and live with intention rather than drifting through life aimlessly.</p>
+        </section>
+        
+        <section class="section">
+            <h2>How This Quote Can Inspire You</h2>
+            <p>Twain’s message is a powerful reminder that life is not just about survival but about purpose. If you feel lost or uncertain, know that finding your "why" is a journey worth taking. By exploring your passions, embracing challenges, and seeking growth, you can transform your life into something meaningful. Whether through career, relationships, or personal goals, discovering what truly drives you will bring fulfillment and direction.</p>
+        </section>
+        
+        <section class="section book-section">
+            <img src="Book - Recto.png" alt="Quotiva Book" class="book-img">
+            <p class="book-caption">Explore more timeless quotes in my book.</p>
+        </section>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="#" class="back-button">Download Book</a>
+    </div>
+</body>
+</html>

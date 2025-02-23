@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelou Quote - Quotiva</title>
+    <link rel="icon" href="Quotiva.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4e7d1;
+            color: #4a3f35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInZoom 1.5s ease-out forwards;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .container {
+            max-width: 900px;
+            padding: 30px;
+            background: #fff8e7;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #c0a080;
+            margin: 30px auto;
+        }
+        .quote-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: #3e2e20;
+        }
+        .author {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .about-author {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .author-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #b3a484;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-top: 30px;
+            line-height: 1.6;
+            padding: 20px;
+            background: #efe2c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c0a080;
+        }
+        .quote-explanation p {
+            line-height: 1.6;
+        }
+        .book-section {
+            text-align: center;
+        }
+        .book-img {
+            width: 260px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #8c705f;
+        }
+        .book-caption {
+            font-style: italic;
+            color: #5a4d42;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #8c705f;
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+        .back-button:hover {
+            background: #6a4f3a;
+            transform: scale(1.05);
+        }
+        ul {
+            text-align: left;
+            padding-left: 3rem;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .quote-section h1 {
+                font-size: 1.5rem;
+            }
+            .about-author {
+                flex-direction: column;
+                align-items: center;
+            }
+            .author-img {
+                width: 100px;
+                height: 100px;
+            }
+            .back-button {
+                display: block;
+                margin: 20px 0;
+            }
+            .book-img {
+                width: 160px;
+            }
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f4e7d1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #c2a382, #8c7460);
+            border-radius: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #8c7460, #4a3f35);
+            box-shadow: 0 0 6px rgba(138, 107, 85, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="quote-section">
+            <h1>"You may encounter many defeats, but you must not be defeated. In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it."</h1>
+            <p class="author">- Maya Angelou -</p>
+        </section>
+        
+        <section class="section about-author">
+            <img src="quote1.jpg" alt="Maya Angelou portrait" class="author-img">
+            <div>
+                <h2>About the Author</h2>
+                <p>Maya Angelou (1928-2014) was an acclaimed American poet, memoirist, and civil rights activist. Best known for her powerful writings on identity, race, and resilience, she became one of the most influential voices of the 20th century. Her autobiography I Know Why the Caged Bird Sings (1969) was a groundbreaking work, detailing her tumultuous childhood and the impact of racism. Angelou’s poetry, including works such as Still I Rise and Phenomenal Woman, celebrates strength, empowerment, and the human spirit. She was not only an artist but also a passionate advocate for social justice, working alongside figures such as Martin Luther King Jr. and Malcolm X during the civil rights movement. Angelou's legacy continues to inspire generations with her wisdom, eloquence, and unwavering commitment to human dignity.</p>
+            </div>
+        </section>
+
+        <section class="section quote-explanation">
+            <h2>Understanding the Quote</h2>
+            <p><strong>Why did she write this?</strong><br>Maya Angelou wrote this quote to remind us that setbacks and defeats are not the end, but rather a necessary part of the journey. She wanted to convey that even in the face of hardship, we have the strength to rise again. By encountering defeats, we learn more about ourselves, our resilience, and our capacity for growth.</p>
+            <p><strong>When?</strong><br>This quote reflects Angelou's personal philosophy, shaped by her experiences with adversity and triumph throughout her life. It resonates particularly during moments of struggle, serving as a reminder that hardships are opportunities for personal growth and self-realization.</p>
+            <p><strong>What does it mean?</strong><br>The quote highlights two essential perspectives when facing challenges: the "defeated" perspective, where one views challenges as insurmountable and allows them to define their limitations, and the "resilient" perspective, where one sees challenges as opportunities for growth, strength, and self-discovery. Angelou's message is clear: defeat is not permanent unless we allow it to be. Instead of surrendering to hardship, we should embrace it as a teacher that helps us discover our inner power and ability to persevere. By rising from defeat, we discover who we are and the depth of our strength.</p>
+        </section>
+        
+        <section class="section">
+            <h2>How This Quote Can Inspire You</h2>
+            <p>Maya Angelou's quote inspires us to see defeats not as final setbacks but as opportunities for personal growth. It teaches us that encountering difficulties is not a reflection of weakness but an essential part of discovering who we are and what we can truly overcome. Each challenge we face helps us learn more about our own strength, resilience, and capacity to rise again.<br> The message encourages perseverance through tough times, reminding us that every defeat is a chance to prove our ability to bounce back and keep going. By embracing this mindset, we can face obstacles with a sense of purpose, knowing that they are not the end but the beginning of a deeper understanding of ourselves and the world around us.</p>
+        </section>
+        
+        <section class="section book-section">
+            <img src="Book - Recto.png" alt="Quotiva Book" class="book-img">
+            <p class="book-caption">Explore more timeless quotes in my book.</p>
+        </section>
+        
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="#" class="back-button">Download Book</a>
+    </div>
+</body>
+</html>
